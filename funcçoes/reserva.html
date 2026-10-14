@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservas | Hotel Héstia</title>
+
+    <link rel="stylesheet" href="reserva.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Hotel Héstia</h1>
+        <p>Faça sua reserva</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="reserva.html">Reservas</a>
+    </nav>
+
+    <main>
+        <section class="formulario-container">
+
+            <h2>Reserve sua estadia</h2>
+
+            <p class="descricao">
+                Preencha os dados abaixo e prepare-se
+                para viver momentos especiais conosco.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="campo">
+                    <label for="nome">Nome completo:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome completo"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemplo@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(00) 00000-0000"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="entrada">Data de entrada:</label>
+                    <input
+                        type="date"
+                        id="entrada"
+                        name="entrada"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="saida">Data de saída:</label>
+                    <input
+                        type="date"
+                        id="saida"
+                        name="saida"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="hospedes">Quantidade de hóspedes:</label>
+                    <select id="hospedes" name="hospedes" required>
+                        <option value="">Selecione</option>
+                        <option value="1">1 hóspede</option>
+                        <option value="2">2 hóspedes</option>
+                        <option value="3">3 hóspedes</option>
+                        <option value="4">4 hóspedes</option>
+                        <option value="5 ou mais">5 ou mais hóspedes</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="quarto">Tipo de quarto:</label>
+                    <select id="quarto" name="quarto" required>
+                        <option value="">Selecione um quarto</option>
+                        <option value="solteiro">Quarto individual</option>
+                        <option value="casal">Quarto de casal</option>
+                        <option value="duplo">Quarto duplo</option>
+                        <option value="luxo">Suíte de luxo</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="observacoes">Observações (opcional):</label>
+                    <textarea
+                        id="observacoes"
+                        name="observacoes"
+                        rows="4"
+                        placeholder="Alguma preferência ou pedido especial?"
+                    ></textarea>
+                </div>
+
+                <button type="submit">Solicitar reserva</button>
+
+            </form>
+
+            <a class="voltar" href="../index.html">
+                Voltar para a página inicial
+            </a>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Hotel Héstia. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
